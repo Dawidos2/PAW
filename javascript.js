@@ -12,7 +12,7 @@ function liczPaliwo(){
         document.getElementById("napis").innerHTML="Koszt paliwa: " + wynik + " zł";
     }
     else{
-        
-        document.getElementById("napis").innerHTML="Podaj poprawne dane";
+        wynik=ile*0;
+        document.getElementById("napis").innerHTML="Koszt paliwa: " + wynik + " zł";
     } 
 }
