@@ -1,17 +1,18 @@
-var rodzaj= parseInt (document.getElementById("a").value);
-var ile= parseInt (document.getElementById("b").value);
-var wynik;
+
+
 function liczPaliwo(){
+    var rodzaj= parseInt (document.getElementById("a").value);
+    var ile= parseInt (document.getElementById("b").value);
     if(rodzaj==1){
-        wynik=ile*4;
-        document.getElementById("napis").innerHTML="Koszt: " + wynik + " zł";
+       var wynik=ile*4;
+        document.getElementById("napis").innerHTML="Koszt paliwa: " + wynik + " zł";
     }
     else if(rodzaj==2){
-        wynik=ile*3.5;
-        document.getElementById("napis").innerHTML="Koszt: " + wynik + " zł";
+       var wynik=ile*3.5;
+        document.getElementById("napis").innerHTML="Koszt paliwa: " + wynik + " zł";
     }
     else{
-        wynik=ile*0;
-        document.getElementById("napis").innerHTML="Koszt: " + wynik + " zł";
+        
+        document.getElementById("napis").innerHTML="Podaj poprawne dane";
     } 
 }
